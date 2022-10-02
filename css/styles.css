@@ -1,0 +1,483 @@
+body {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  background-color: #F9F9F9;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+h2 {
+  color: #000;
+  line-height: 15px;
+  text-align: center;
+}
+
+hr {
+  width: 7%;
+  border: none;
+  height: 4px;
+  background: #F6385F;
+  border-radius: 7px 7px 7px 7px;
+  text-align: center;
+}
+
+p {
+  word-spacing: 2px;
+  color: #676767;
+}
+
+.btn {
+  border: 1px solid #F6385F;
+  background: none;
+  padding: 10px 40px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 30px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.btn2 {
+  color: #F6385F;
+}
+
+.btn1 {
+  color: #fff;
+}
+
+.btn2:hover {
+  color: #fff;
+}
+
+.btn1:hover {
+  color: #F6385F;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #F6385F;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn1::before {
+  top: 0;
+  /* border-radius: 0 0 50% 50%; */
+}
+
+.btn2::before {
+  bottom: 0;
+  /* border-radius: 50% 50% 0 0; */
+}
+
+.btn1::before {
+  height: 180%;
+}
+
+.btn2:hover::before {
+  height: 180%;
+}
+
+.btn1:hover::before {
+  height: 0%;
+}
+
+/* Navigation Menu */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 150px;
+  background-color: #F9F9F9;
+  width: 100%;
+}
+
+header .logo {
+  color: #F6385F;
+  height: 50px;
+  line-height: 30px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #000;
+  text-decoration: none !important;
+  display: block;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: #F9F9F9;
+  background: #F6385F;
+}
+
+.menu-toggle {
+  color: #F6385F;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  display: none;
+}
+
+/* Title */
+.head {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 100px;
+}
+
+.head .head-data h3 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #B9B9B9;
+}
+
+.head .head-data h1 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #000;
+  line-height: 50px;
+}
+
+.head .head-data h1 span {
+  font-size: 50px;
+  font-weight: 600;
+  color: #F6385F;
+}
+
+.head .head-data p {
+  width: 75%;
+}
+
+.head .head-data .head-text {
+  margin-top: 80px;
+}
+
+.head .head-data img {
+  position: relative;
+  height: 500px;
+  width: auto;
+}
+
+/* About */
+.about-main {
+  background-color: #fff;
+}
+
+.about-main .about-content {
+  padding: 60px 150px;
+}
+
+.about-main .about-content .row {
+  padding: 20px 0;
+}
+
+.about-main .about-content img {
+  position: relative;
+  height: 350px;
+  width: auto;
+}
+
+.about-main .about-content .about-text {
+  margin-top: 70px;
+}
+
+.about-main .about-content .btn {
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+/* What Can I Do? */
+.whaticando-main {
+  padding: 60px 200px;
+}
+
+.whaticando-main .whaticando-box {
+  margin-top: 30px;
+}
+
+.whaticando-main .whaticando-box .first {
+  margin: 20px 10px;
+  background-color: #fff;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  border-radius: 10px;
+}
+
+.whaticando-main .whaticando-box .first .circle {
+  background-color: #F9F9F9;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+
+.whaticando-main .whaticando-box .first .circle h6 {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.whaticando-main .whaticando-box .first .text {
+  padding-left: 10px;
+}
+
+.whaticando-main .whaticando-box .first .text h5 {
+  padding-bottom: 5px;
+  color: #F6385F;
+  font-weight: 600;
+}
+
+.whaticando-main .whaticando-box .first .text p {
+  font-size: 14px;
+}
+
+.whaticando-main .whaticando-box2 {
+  margin-top: 10px;
+}
+
+/* Skills */
+.skills-main {
+  background-color: #fff;
+}
+
+.skills-main .skills-content {
+  padding: 60px 150px;
+}
+
+/* Experiences */
+
+.experiences-main .experiences-content{
+  padding: 60px 150px;
+}
+
+.experiences-main .experiences-content .experiences-p{
+  padding: 0 140px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.experiences-main .experiences-content .experiences-box{
+  background-color: #fff;
+  margin: 0 100px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.experiences-main .experiences-content .experiences-box .col{
+  position: relative;
+}
+
+.experiences-main .experiences-content .experiences-box img{
+  position: relative;
+  height: 130px;
+  width: auto;
+  left: 45px;
+  top: 30px;
+}
+
+.experiences-main .experiences-content .experiences-box .experiences-data {
+  padding: 30px 20px 20px 20px;
+}
+
+.experiences-main .experiences-content .experiences-box .experiences-data h4 {
+  display: inline-block;
+  line-height: 10px;
+}
+
+.experiences-main .experiences-content .experiences-box .experiences-data p{
+  font-size: 15px;
+  padding-right: 30px;
+}
+
+.experiences-main .experiences-content .experiences-box .experiences-data .experiences-date {
+  display: inline;
+  position: relative;
+  float: right;
+}
+
+.experiences-main .experiences-content .experiences-box .experiences-data .experiences-date .date{
+  position: relative;
+  float: right;
+}
+
+.experiences-main .experiences-content .experiences-box .experiences-data .experiences-date .date p{
+  font-size: 15px;
+}
+
+.experiences-main .experiences-content .experiences-box .experiences-data p span{
+  color: #F6385F;
+}
+
+.experiences-main .experiences-content .experiences-button{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.experiences-main .experiences-content .btn{
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+/* Projects */
+.projects-main {
+  background-color: #fff;
+}
+
+.projects-main .projects-content {
+  padding: 60px 150px;
+}
+
+
+.projects-main .projects-content .projects-button{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.projects-main .projects-content .btn{
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+
+  /* Navigation Menu */
+  header {
+    padding: 0 40px;
+    background: #F9F9F9;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #F9F9F9;
+    top: 75px;
+    left: -100%;
+    transition: 0.5s;
+  }
+
+  header nav.active {
+    left: 0;
+  }
+
+  header nav ul {
+    display: block;
+  }
+
+  header nav ul li a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  }
+
+  /* Title */
+  .head {
+    padding: 50px 40px;
+  }
+
+  .head .head-data img {
+    display: none;
+  }
+
+  /* About */
+  .about-main .about-content {
+    padding: 50px 40px;
+  }
+
+  .about-main .about-content img {
+    width: 400px;
+    height: auto;
+  }
+
+  /* What I can Do? */
+  .whaticando-main {
+    padding: 50px 40px;
+  }
+
+  .whaticando-main .whaticando-box {
+    margin-top: 10px;
+  }
+
+  /* Experiences */
+  .experiences-main{
+    padding: 50px 40px;
+  }
+
+  .experiences-main .experiences-content{
+    padding: 0;
+  }
+
+  .experiences-main .experiences-content .experiences-p{
+    padding: 0;
+  }
+
+  .experiences-main .experiences-content .experiences-box .experiences-data {
+    padding: 30px 10px 20px 10px;
+    margin-left: 30px;
+  }
+
+  .experiences-main .experiences-content .experiences-box .experiences-data h4{
+    font-size: 20px;
+  }
+
+  .experiences-main .experiences-content .experiences-box .experiences-data p{
+    font-size: 15px;
+  }
+
+  .experiences-main .experiences-content .experiences-box{
+    margin: 30px 0;
+  }
+
+  .experiences-main .experiences-content .experiences-box .row .col{
+    display: none;
+  }
+
+  .experiences-main .experiences-content .experiences-button{
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
