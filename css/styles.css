@@ -49,10 +49,12 @@ p {
 
 .btn1 {
   color: #fff;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .btn2:hover {
   color: #fff;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .btn1:hover {
@@ -233,6 +235,7 @@ header nav ul li a:hover {
   padding-left: 10px;
   padding-bottom: 15px;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .whaticando-main .whaticando-box .first .circle {
@@ -291,6 +294,8 @@ header nav ul li a:hover {
   margin: 0 100px;
   margin-top: 50px;
   margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .experiences-main .experiences-content .experiences-box .col{
