@@ -1,6 +1,7 @@
 body {
   font-family: 'Poppins', 'Montserrat', sans-serif;
   background-color: #F9F9F9;
+  align-items: center;
 }
 
 html {
@@ -29,6 +30,10 @@ p {
 }
 .clear { 
   clear:both; 
+}
+
+.remove-all-styles {
+  all: revert;
 }
 
 .btn {
@@ -479,6 +484,53 @@ header nav ul li a:hover {
   background-color: #fff;
   box-shadow: 5px 5px 10px #fff;
   border-color: #fff;
+}
+
+/* Footer */
+.footer-main {
+  background-color: #fff;
+}
+
+.footer-main .footer-content {
+  padding: 60px 150px 30px 150px;
+  text-align: center;
+}
+
+.footer-main .footer-content .footer-message {
+  padding: 30px 0 10px 0;
+}
+
+.footer-main .footer-content .footer-social {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-main .footer-content .footer-social a {
+  margin: 0 10px ;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #F6385F;
+}
+
+.footer-main .footer-content .footer-social a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F6385F;
+  border-radius: 50%;
+  box-shadow: 1px 5px 10px #dddddd;
+}
+
+.footer-main .footer-content hr {
+  margin: 30px;
+}
+
+.footer-main .footer-content .footer-copyright {
+  font-size: small;
+}
+
+.footer-main .footer-content .footer-copyright span{
+  color: #F6385F;
 }
 
 @media (max-width:991px) {
