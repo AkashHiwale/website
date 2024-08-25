@@ -1,6 +1,7 @@
 body {
   font-family: 'Poppins', 'Montserrat', sans-serif;
   background-color: #F9F9F9;
+  align-items: center;
 }
 
 html {
@@ -27,6 +28,13 @@ p {
   word-spacing: 2px;
   color: #676767;
 }
+.clear { 
+  clear:both; 
+}
+
+.remove-all-styles {
+  all: revert;
+}
 
 .btn {
   border: 1px solid #F6385F;
@@ -49,10 +57,12 @@ p {
 
 .btn1 {
   color: #fff;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .btn2:hover {
   color: #fff;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .btn1:hover {
@@ -233,6 +243,7 @@ header nav ul li a:hover {
   padding-left: 10px;
   padding-bottom: 15px;
   border-radius: 10px;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .whaticando-main .whaticando-box .first .circle {
@@ -274,8 +285,27 @@ header nav ul li a:hover {
   padding: 60px 150px;
 }
 
-/* Experiences */
+.skills-main .skills-content .row{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
+.skills-main .skills-content .row .col-sm{
+  text-align: center;
+}
+
+.skills-main .skills-content .row .col-sm img{
+  height: 80px;
+  width: auto;
+  padding: 5px;
+}
+
+.skills-main .skills-content .row .col-sm img{
+  height: 80px;
+  width: 80px;
+}
+
+/* Experiences */
 .experiences-main .experiences-content{
   padding: 60px 150px;
 }
@@ -291,6 +321,8 @@ header nav ul li a:hover {
   margin: 0 100px;
   margin-top: 50px;
   margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #e2e1e1;
 }
 
 .experiences-main .experiences-content .experiences-box .col{
@@ -358,7 +390,6 @@ header nav ul li a:hover {
   padding: 60px 150px;
 }
 
-
 .projects-main .projects-content .projects-button{
   width: 100%;
   height: auto;
@@ -370,15 +401,157 @@ header nav ul li a:hover {
   font-size: 15px;
 }
 
+/* Reviews */
+.reviews-main .reviews-content{
+  padding: 60px 0;
+  overflow: hidden;
+}
 
+.reviews-main .reviews-content .reviews-box{
+  background-color: #fff;
+  margin: 0 100px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #e2e1e1;
+  width: 850px;
+}
 
+.reviews-main .reviews-content .reviews-box-first{
+  margin-top: 50px;
+  position: relative;
+  float: right;
+}
 
+.reviews-main .reviews-content .reviews-box-second{
+  position: relative;
+  float: left;
+}
 
+.reviews-main .reviews-content .reviews-box-third{
+  position: relative;
+  float: right;
+  margin-bottom: 50px;
+}
 
+.reviews-main .reviews-content .reviews-box .reviews-data {
+  padding: 30px 40px 10px 40px;
+}
 
+.reviews-main .reviews-content .reviews-box .reviews-data h4 {
+  display: inline-block;
+  line-height: 10px;
+}
 
+.reviews-main .reviews-content .reviews-box .reviews-data p{
+  font-size: 15px;
+}
 
+.reviews-main .reviews-content .reviews-box .reviews-data .reviews-intro {
+  display: inline;
+}
 
+.reviews-main .reviews-content .reviews-box .reviews-data p span{
+  color: #F6385F;
+}
+
+.reviews-main .reviews-content .reviews-box .reviews-data .reviews-linkedin {
+  display: inline;
+  position: relative;
+  float: right;
+}
+
+.reviews-main .reviews-content .reviews-box .reviews-data .reviews-linkedin{
+  position: relative;
+  float: right;
+}
+
+.reviews-main .reviews-content .reviews-box .reviews-data .reviews-linkedin .fa {
+  font-size: 30px;
+}
+
+/* Hire Me */
+.hire-main .hire-content {
+  padding: 0 100px 80px 100px;
+}
+
+.hire-main .hire-content .hire-me{
+  background-color: #F6385F;
+  padding: 60px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hire-main .hire-content .hire-me h2{
+  color: #fff;
+}
+
+.hire-main .hire-content .hire-me hr{
+  background-color: #fff;
+}
+
+.hire-main .hire-content .hire-me p{
+  color: #fff;
+  padding: 10px 260px;
+}
+
+.hire-main .hire-content .hire-me button{
+  background-color: #fff;
+  color: #F6385F;
+}
+
+.hire-main .hire-content .hire-me button:hover{
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #fff;
+  border-color: #fff;
+}
+
+/* Footer */
+.footer-main {
+  background-color: #fff;
+}
+
+.footer-main .footer-content {
+  padding: 60px 150px 30px 150px;
+  text-align: center;
+}
+
+.footer-main .footer-content .footer-message {
+  padding: 30px 0 10px 0;
+}
+
+.footer-main .footer-content .footer-social {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-main .footer-content .footer-social a {
+  margin: 0 10px ;
+  padding: 5px 10px;
+  font-size: 20px;
+  color: #F6385F;
+}
+
+.footer-main .footer-content .footer-social a:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #F6385F;
+  border-radius: 50%;
+  box-shadow: 1px 5px 10px #dddddd;
+}
+
+.footer-main .footer-content hr {
+  margin: 30px;
+}
+
+.footer-main .footer-content .footer-copyright {
+  font-size: small;
+}
+
+.footer-main .footer-content .footer-copyright span{
+  color: #F6385F;
+}
 
 @media (max-width:991px) {
 
