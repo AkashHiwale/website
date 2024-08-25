@@ -285,6 +285,26 @@ header nav ul li a:hover {
   padding: 60px 150px;
 }
 
+.skills-main .skills-content .row{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.skills-main .skills-content .row .col-sm{
+  text-align: center;
+}
+
+.skills-main .skills-content .row .col-sm img{
+  height: 80px;
+  width: auto;
+  padding: 5px;
+}
+
+.skills-main .skills-content .row .col-sm img{
+  height: 80px;
+  width: 80px;
+}
+
 /* Experiences */
 .experiences-main .experiences-content{
   padding: 60px 150px;
